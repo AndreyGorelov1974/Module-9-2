@@ -42,12 +42,22 @@ int main() {
 	std::cin >> inputNumber;
 
 	bool correctNumber = true;
+	bool presenceDigit = false;
+	int numberPoints = 0;
 
-	if () {
+	if (inputNumber[0] >= '0' && inputNumber[0] <= '9') {
+		presenceDigit = true;
+	}
+	else if (inputNumber[0] == '.') {
+		numberPoints++;
+	}
+	else if (inputNumber[0] != '-') {
+		correctNumber = false;
+	}
+
+	for (int i = 1; correctNumber && i < inputNumber.length(); i++) {
 
 	}
 
-	for (int i = 0; i < inputNumber.length() && correctNumber; i++) {
-
-	}
+	(presenceDigit && correctNumber) ? std::cout << "Yes" : std::cout << "No";
 }
