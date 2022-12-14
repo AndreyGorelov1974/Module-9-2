@@ -56,7 +56,7 @@ int main() {
 	}
 
 	for (int i = 1; correctNumber && i < inputNumber.length(); i++) {
-		if (inputNumber[i] >= '0' && inputNumber[0] <= '9') {
+		if (inputNumber[i] >= '0' && inputNumber[i] <= '9') {
 			presenceDigit = true;
 		}
 		else if (inputNumber[i] == '.') {
